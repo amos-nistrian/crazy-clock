@@ -1,4 +1,6 @@
 /* Layout */
+
+/* center the content */
 .main {
     display: flex;
     padding: 2em;
@@ -20,15 +22,19 @@
     stroke-miterlimit: 10;
 }
 
+/* center small circle */
 .mid-circle {
     fill: #000;
 }
+
+/* ticks around the clock */
 .hour-marks {
     fill: none;
     stroke: #000;
     stroke-width: 9;
     stroke-miterlimit: 10;
 }
+
 
 .hour-arm {
     fill: none;
@@ -61,6 +67,7 @@
 #hour,
 #minute,
 #second {
+  /* rotate around the center */
     transform-origin: 300px 300px;
     transition: transform .5s ease-in-out;
 }
